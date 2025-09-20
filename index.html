@@ -1,13 +1,325 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="utf-8">
-            <title>Portfolio</title>
-        </head>
-        <body>
-            <h1>Portfolio</h1>
-            <h2>Bienvenu sur mon portfolio</h2>
-            <p>This part of the map has not been unlocked yet please gain more xp to unlock</p>
-        </body>
-    </html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Cyber Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="grid-overlay"></div>
+        <div class="particles"></div>
+        <div class="scan-lines"></div>
+    </div>
 
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="glitch" data-text="&lt;/DEV&gt;">&lt;/DEV&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">Étudiant</span>
+                <span class="line glitch" data-text="BTS SIO SLAM">BTS SIO SLAM</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Passionné par le développement d'applications</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hologram">
+                <div class="code-lines">
+                    <span>&lt;html&gt;</span>
+                    <span>&nbsp;&nbsp;&lt;body&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</span>
+                    <span>&nbsp;&nbsp;&lt;/body&gt;</span>
+                    <span>&lt;/html&gt;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                À propos de moi
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Étudiante en BTS SIO option SLAM (Solutions Logicielles et Applications Métiers),
+                        je me spécialise dans le développement d'applications web et mobiles. 
+                        Passionné par les nouvelles technologies et l'innovation numérique.
+                    </p>
+                    <p>
+                        Mon parcours m'a permis d'acquérir des compétences en développement full-stack, 
+                        avec une maîtrise des langages comme PHP, Java, Python et des frameworks modernes
+                        tels que symfony et javaFX.
+                        Je développe également mes compétences en gestion de bases de données et cybersécurité.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projets étudiants</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Années de formation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Technologies maîtrisées</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="profile-placeholder">
+                            <div class="avatar-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Compétences techniques
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Développement Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS/SCSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Outils</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Symfony</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Données & Systèmes</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Projets réalisés
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Voir le code</a>
+                                <a href="#" class="project-link">Démo live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application de Gestion Scolaire</h3>
+                        <p>Système de gestion des notes et absences pour établissement scolaire</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>Symfony</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Voir le code</a>
+                                <a href="#" class="project-link">Démo live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>API REST E-commerce</h3>
+                        <p>API pour boutique en ligne avec gestion des produits et commandes</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Voir le code</a>
+                                <a href="#" class="project-link">Démo live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application Mobile de Veille</h3>
+                        <p>App mobile pour suivre les actualités technologiques et tendances IT</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>API REST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Contactez-moi
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Étudiant motivé recherchant un stage ou une alternance en développement. 
+                        N'hésitez pas à me contacter pour discuter d'opportunités ou de projets collaboratifs.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <span class="contact-value">etudiant.sio@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Formation:</span>
+                            <span class="contact-value">BTS SIO SLAM - 2ème année</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Localisation:</span>
+                            <span class="contact-value">Paris, France</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" method="post" action="src/traitement/envoiMail.php">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom complet</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Étudiant BTS SIO SLAM. Portfolio étudiant.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
