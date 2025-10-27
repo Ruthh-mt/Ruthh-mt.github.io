@@ -624,10 +624,6 @@ section {
 }
 
 /* Projets Section */
-.projets {
-    background: var(--secondary-bg);
-}
-
 .projets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -726,7 +722,7 @@ section {
 
 /* BTS SIO Section */
 .bts-sio {
-    background: var(--primary-bg);
+    background: var(--secondary-bg);
 }
 
 .bts-content {
@@ -835,10 +831,6 @@ section {
 }
 
 /* Veille Section */
-.veille {
-    background: var(--secondary-bg);
-}
-
 .veille-intro {
     text-align: center;
     margin-bottom: var(--spacing-3xl);
@@ -942,6 +934,9 @@ section {
 }
 
 /* Contact Section */
+.contact{
+    background: var(--secondary-bg);
+}
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
